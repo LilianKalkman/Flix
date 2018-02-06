@@ -6,11 +6,11 @@
     <header>
       <h2><%=movie.title%></h2>
     </header>
-    <p><%=movie.description%></p>
+    <p><%=truncate(movie.description, length: 15, separator: ' ')%></p>
     <table>
       <tr>
         <th>Released:</th>
-        <td><%=movie.released_on%></td>
+        <td><%=movie.released_on%> (<%=time_ago_in_words(movie.released_on)%> ago)</td>
       </tr>
       <tr>
         <th>Rating:</th>
@@ -18,7 +18,7 @@
       </tr>
       <tr>
         <th>Total Gross:</th>
-        <td><%=number_to_currency(movie.total_gross)%></td>
+        <td><%=format_total_gross(movie)%></td>
       </tr>
     </table>
   </article>
