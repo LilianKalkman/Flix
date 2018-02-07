@@ -7,7 +7,7 @@
   <article>
     <header>
       <h2><%= link_to movie.title, movie_path(movie)%></h2>
-      <p><%= image_for(movie)%></p>
+      <p class="image"><%= image_for(movie)%></p>
       <h3><%= movie.cast %></h3>
     </header>
     <p><%=truncate(movie.description, length: 15, separator: ' ')%></p>

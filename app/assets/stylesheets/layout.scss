@@ -1,0 +1,19 @@
+
+@import "colors";
+
+header.layout {
+  color: black;
+  background-color: $secondary-color;
+  text-align: center;
+}
+aside {
+  float: right;
+  background-color: lighten($primary-color, 15%);
+  width: 200px;
+}
+
+footer {
+  color: black;
+  background-color: $primary-color;
+  text-align: center;
+}
