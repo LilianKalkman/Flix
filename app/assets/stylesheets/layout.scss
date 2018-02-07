@@ -2,9 +2,12 @@
 @import "colors";
 
 header.layout {
-  color: black;
+  color: white;
   background-color: $secondary-color;
   text-align: center;
+  padding: 5px;
+  border-bottom: 3px solid darken($primary-color, 15%);
+  text-transform: uppercase;
 }
 aside {
   float: right;
@@ -16,4 +19,6 @@ footer {
   color: black;
   background-color: $primary-color;
   text-align: center;
+  padding: 5px;
+  border-bottom: 3px solid darken($primary-color, 15%);
 }

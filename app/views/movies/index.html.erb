@@ -4,10 +4,10 @@
 <%= link_to "Add New Movie", new_movie_path %>
 
 <% @movies.each do |movie| %>
-  <article>
+  <article class="movie">
     <header>
       <h2><%= link_to movie.title, movie_path(movie)%></h2>
-      <p class="image"><%= image_for(movie)%></p>
+      <p><%= image_for(movie)%></p>
       <h3><%= movie.cast %></h3>
     </header>
     <p><%=truncate(movie.description, length: 15, separator: ' ')%></p>
