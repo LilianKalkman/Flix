@@ -8,7 +8,13 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
+  <%= render "layouts/header" %>
+  <%= render 'layouts/sidebar' %>
+
   <body>
     <%= yield %>
   </body>
+
+  <footer style="color:rgb(34, 121, 124); background-color:rgb(172, 165, 168);
+  text-align:center;">Copyright &copy; 2018</footer>
 </html>
