@@ -9,7 +9,7 @@ class ReviewsController < ApplicationController
   def new
     @review = @movie.reviews.new
   end
-  #
+  
   def create
     @review = @movie.reviews.new(params_review)
     if @review.save
