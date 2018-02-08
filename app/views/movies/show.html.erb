@@ -39,7 +39,8 @@
   </p>
 </article>
 
-<%= link_to "See the reviews", movie_reviews_path(@movie) %>
+<%= link_to "See the reviews", movie_reviews_path(@movie) %> | 
+<%= link_to "Write a review", new_movie_review_path(@movie)%>
 
 <footer>
   <%= link_to "All Movies", movies_path %> |
