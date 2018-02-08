@@ -7,7 +7,9 @@
   <%= f.text_area :description, cols: 20, rows:5 %>
   <p>
     <%= f.label :rating%>:<br>
-    <%= f.text_field :rating, size:3 %></p>
+    <%= f.select :rating, Movie::RATINGS, prompt: "Pick one" %>
+    <!-- <%= f.text_field :rating, size:3 %> -->
+  </p>
   <p>
     <%= f.label :total_gross%>:<br>
     <%= f.number_field :total_gross %>
